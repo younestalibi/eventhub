@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Announcment from "./components/Announcment";
-import Countdown from "./components/CountDown";
+// import Countdown from "./components/CountDown";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <Announcment />
         <Navbar />
         {children}
-        <Countdown eventDate={eventDate} />
+        {/* <Countdown eventDate={eventDate} /> */}
       </body>
     </html>
   );
