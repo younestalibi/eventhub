@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const AboutUs = () => {
@@ -10,14 +11,14 @@ const AboutUs = () => {
                             <div className="flex items-center -mx-3 sm:-mx-4">
                                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                                     <div className="py-3 sm:py-4">
-                                        <img
+                                        <Image
                                             src="https://i.ibb.co/gFb3ns6/image-1.jpg"
                                             alt=""
                                             className="w-full rounded-2xl"
                                         />
                                     </div>
                                     <div className="py-3 sm:py-4">
-                                        <img
+                                        <Image
                                             src="https://i.ibb.co/rfHFq15/image-2.jpg"
                                             alt=""
                                             className="w-full rounded-2xl"
@@ -26,7 +27,7 @@ const AboutUs = () => {
                                 </div>
                                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                                     <div className="relative z-10 my-4">
-                                        <img
+                                        <Image
                                             src="https://i.ibb.co/9y7nYCD/image-3.jpg"
                                             alt=""
                                             className="w-full rounded-2xl"
@@ -619,7 +620,7 @@ const AboutUs = () => {
                                 </p>
                                 <p className="mb-8 text-base text-body-color">
                                     The upcoming edition of HubberExpo is scheduled to take place in Dubai on September 30, 2024,
-                                    featuring the participation of the world's leading crypto companies and blockchain entrepreneurs.
+                                    featuring the participation of the world&apos;s leading crypto companies and blockchain entrepreneurs.
                                 </p>
                                 <p className="mb-8 text-base text-body-color">
                                     As Dubai emerges as a global crypto hub, HubberExpo serves as the gathering point for the worldwide community interested in blockchain and cryptocurrency,
