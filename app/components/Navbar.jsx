@@ -28,27 +28,7 @@ const Navbar = () => {
                         <nav aria-label="Global">
                             <ul className="flex items-center gap-6 text-sm">
                                 <li>
-                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> About </a>
-                                </li>
-
-                                <li>
-                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Careers </a>
-                                </li>
-
-                                <li>
-                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> History </a>
-                                </li>
-
-                                <li>
-                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Services </a>
-                                </li>
-
-                                <li>
-                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Projects </a>
-                                </li>
-
-                                <li>
-                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </a>
+                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#">Home</a>
                                 </li>
                             </ul>
                         </nav>
@@ -90,27 +70,7 @@ const Navbar = () => {
                     <nav aria-label="Global">
                         <ul className="mt-4 space-y-2 px-4 text-sm">
                             <li>
-                                <a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#">About</a>
-                            </li>
-
-                            <li>
-                                <a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#">Careers</a>
-                            </li>
-
-                            <li>
-                                <a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#">History</a>
-                            </li>
-
-                            <li>
-                                <a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#">Services</a>
-                            </li>
-
-                            <li>
-                                <a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#">Projects</a>
-                            </li>
-
-                            <li>
-                                <a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#">Blog</a>
+                                <a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#">Home</a>
                             </li>
                         </ul>
                     </nav>

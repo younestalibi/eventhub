@@ -8,7 +8,7 @@ export default function Home() {
   const eventDate = '2024-12-31T00:00:00'; 
 
   return (
-    <div className="mb-10">
+    <div className="mb-28">
       <Hero />
       <AboutUs/>
       <Stats/>
