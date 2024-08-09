@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
-
+import image1 from '../../public/assets/image-1.jpg'
+import image2 from '../../public/assets/image-2.jpg'
+import image3 from '../../public/assets/image-3.jpg'
 const AboutUs = () => {
     return (
         <>
@@ -12,25 +14,37 @@ const AboutUs = () => {
                                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                                     <div className="py-3 sm:py-4">
                                         <Image
-                                            src="https://i.ibb.co/gFb3ns6/image-1.jpg"
+                                            width={"10"}
+                                            height={"10"}
+                                            src={image1}
                                             alt=""
                                             className="w-full rounded-2xl"
+                                            loading="lazy"
+                                            placeholder="empty"
                                         />
                                     </div>
                                     <div className="py-3 sm:py-4">
                                         <Image
-                                            src="https://i.ibb.co/rfHFq15/image-2.jpg"
+                                            width={"10"}
+                                            height={"10"}
+                                            src={image2}
                                             alt=""
                                             className="w-full rounded-2xl"
+                                            loading="lazy"
+                                            placeholder="blur"
                                         />
                                     </div>
                                 </div>
                                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                                     <div className="relative z-10 my-4">
                                         <Image
-                                            src="https://i.ibb.co/9y7nYCD/image-3.jpg"
+                                            width={"10"}
+                                            height={"10"}
+                                            src={image3}
                                             alt=""
                                             className="w-full rounded-2xl"
+                                            loading="lazy"
+                                            placeholder="blur"
                                         />
                                         <span className="absolute -right-7 -bottom-7 z-[-1]">
                                             <svg
