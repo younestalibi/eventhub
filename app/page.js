@@ -12,15 +12,26 @@ export default function Home() {
 
   return (
     <div className="mb-52">
-      <Hero />
-      <AboutUs />
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="about-us">
+        <AboutUs />
+      </section>
       <Stats />
-      <Pricing />
-      <DiscussionTopics />
-      <Speakers />
-      <Sponsors />
+      <section id="pricing">
+        <Pricing />
+      </section>
+      <section id="discussion-topics">
+        <DiscussionTopics />
+      </section>
+      <section id="speakers">
+        <Speakers />
+      </section>
+      <section id="sponsors">
+        <Sponsors />
+      </section>
       <Countdown eventDate={eventDate} />
-
     </div>
   );
 }

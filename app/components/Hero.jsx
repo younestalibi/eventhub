@@ -16,9 +16,9 @@ const Hero = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
-    }, 3000); 
+    }, 3000);
 
-    return () => clearInterval(intervalId); 
+    return () => clearInterval(intervalId);
   }, [phrases.length]);
 
   return (
@@ -49,13 +49,6 @@ const Hero = () => {
               href="#"
             >
               Buy Tickets
-            </a>
-
-            <a
-              className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-              href="#"
-            >
-              Learn More
             </a>
           </div>
         </div>

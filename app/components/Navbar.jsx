@@ -2,8 +2,9 @@
 
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { HiMenu, HiX } from 'react-icons/hi';
 import logo from '../../public/assets/hubber-expo-high-resolution-logo-transparent.svg';
-import { motion } from 'framer-motion';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +38,7 @@ const Navbar = () => {
                             <Image
                                 src={logo}
                                 alt='logo'
-                                width={"120"}
+                                width={120}
                             />
                         </a>
                     </div>
@@ -45,9 +46,12 @@ const Navbar = () => {
                     <div className="hidden md:block">
                         <nav aria-label="Global">
                             <ul className="flex items-center gap-6 text-sm">
-                                <li>
-                                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#">Home</a>
-                                </li>
+                                <li><a className="text-gray-500 transition hover:text-gray-500/75" href="#hero">Home</a></li>
+                                <li><a className="text-gray-500 transition hover:text-gray-500/75" href="#about-us">About Us</a></li>
+                                <li><a className="text-gray-500 transition hover:text-gray-500/75" href="#pricing">Pricing</a></li>
+                                <li><a className="text-gray-500 transition hover:text-gray-500/75" href="#discussion-topics">Discussion Topics</a></li>
+                                <li><a className="text-gray-500 transition hover:text-gray-500/75" href="#speakers">Speakers</a></li>
+                                <li><a className="text-gray-500 transition hover:text-gray-500/75" href="#sponsors">Sponsors</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -63,39 +67,44 @@ const Navbar = () => {
                         </div>
 
                         <div className="block md:hidden">
-                            <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+                            <button
+                                className="z-50 sticky rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
                                 onClick={toggleMenu}
                             >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-5 w-5"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
+                                <motion.div
+                                    initial={{ rotate: 0 }}
+                                    animate={{ rotate: isMenuOpen ? 90 : 0 }}
+                                    transition={{ duration: 0.3 }}
                                 >
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                                </svg>
+                                    {isMenuOpen ? <HiX className="h-5 w-5" /> : <HiMenu className="h-5 w-5" />}
+                                </motion.div>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            {isMenuOpen && (
-                <motion.div
-                    className="md:hidden"
-                    initial={{ scale: 0.5 }}
-                    animate={{ scale: 1, padding: 10 }}
-                >
-                    <nav aria-label="Global">
-                        <ul className="mt-4 space-y-2 px-4 text-sm">
-                            <li>
-                                <a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#">Home</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </motion.div>
-            )}
+            <AnimatePresence>
+                {isMenuOpen && (
+                    <motion.div
+                        className="md:hidden fixed inset-0 bg-white shadow-lg z-40"
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -50 }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        <nav aria-label="Global">
+                            <ul className="mt-4 space-y-2 px-4 text-sm">
+                                <li><a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#hero" onClick={toggleMenu}>Home</a></li>
+                                <li><a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#about-us" onClick={toggleMenu}>About Us</a></li>
+                                <li><a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#pricing" onClick={toggleMenu}>Pricing</a></li>
+                                <li><a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#discussion-topics" onClick={toggleMenu}>Discussion Topics</a></li>
+                                <li><a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#speakers" onClick={toggleMenu}>Speakers</a></li>
+                                <li><a className="block rounded-lg px-4 py-2 text-gray-500 transition hover:bg-gray-100" href="#sponsors" onClick={toggleMenu}>Sponsors</a></li>
+                            </ul>
+                        </nav>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </header>
     );
 };
