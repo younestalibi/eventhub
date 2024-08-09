@@ -15,6 +15,8 @@ import fredZhou from '../../public/assets/speakers/fredZhou.jpg';
 import lennixLai from '../../public/assets/speakers/lennixLai.jpg';
 import victoriaScholar from '../../public/assets/speakers/victoriaScholar.jpg';
 import stephenLindsay from '../../public/assets/speakers/stephenLindsay.jpg';
+import Container from './Container';
+import Title from './Title';
 
 const speakersData = [
     {
@@ -81,12 +83,9 @@ const speakersData = [
 
 const Speakers = () => {
     return (
-        <div className='my-20 p-5'>
-            <div className="max-w-2xl mx-auto text-center">
-                <h2 className="text-gray-800 text-4xl font-extrabold">MEET OUR SPEAKERS</h2>
-            </div>
-
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 text-center mt-16 max-w-5xl mx-auto">
+        <Container>
+            <Title title={"MEET OUR SPEAKERS"}></Title>
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 text-center mx-auto">
                 {speakersData.map((speaker, index) => (
                     <motion.div
                         key={index}
@@ -111,7 +110,7 @@ const Speakers = () => {
                     </motion.div>
                 ))}
             </div>
-        </div>
+        </Container>
     );
 };
 

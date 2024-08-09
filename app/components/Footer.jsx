@@ -150,8 +150,8 @@ const Footer = () => {
                             </li>
                         </ul>
 
-                        <p className="mt-8 text-xs text-gray-500 sm:mt-0">
-                            &copy; 2024. HubberExpo. All rights reserved.
+                        <p className="mt-8 text-sm text-gray-500 sm:mt-0">
+                            &copy; {new Date().getFullYear()}. <span className='font-extrabold'>HubberExpo</span>. All rights reserved. Powered by <a className='font-medium' href='https://younes-talibi.web.app' target='_blank'>Younes-Talibi</a>
                         </p>
                     </div>
                 </div>

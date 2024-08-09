@@ -12,6 +12,8 @@ import topic10 from '../../public/assets/topics/topic10.webp';
 import topic11 from '../../public/assets/topics/topic11.jpg';
 import topic12 from '../../public/assets/topics/topic12.jpg';
 import Image from 'next/image';
+import Container from './Container';
+import Title from './Title';
 
 const discussionTopics = [
     {
@@ -78,7 +80,8 @@ const discussionTopics = [
 
 const DiscussionTopics = () => {
     return (
-        <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 mx-auto">
+        <Container>
+            <Title title={"DISCUSSION TOPICS"}></Title>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {discussionTopics.map((topic, index) => (
                     <article key={index} className="flex flex-col bg-white transition-shadow shadow hover:shadow-lg rounded-lg overflow-hidden">
@@ -93,12 +96,12 @@ const DiscussionTopics = () => {
                         />
                         <div className="p-4 flex flex-col flex-1">
                             <h3 className="font-bold text-gray-900 text-lg">{topic.title}</h3>
-                            <p className="mt-2 text-gray-700 text-sm">'Speaker: {topic.speaker}</p>
+                            <p className="mt-2 text-gray-700 text-sm">Speaker: {topic.speaker}</p>
                         </div>
                     </article>
                 ))}
             </div>
-        </div>
+        </Container>
     );
 };
 

@@ -14,7 +14,7 @@ const statsData = [
 const Stats = () => {
     return (
         <section
-            className="text-white bg-cover bg-center bg-no-repeat bg-fixed"
+            className="text-white bg-cover bg-center bg-no-repeat bg-fixed my-20"
             style={{
                 backgroundImage: 'url(/assets/world-map.jpg)',
             }}

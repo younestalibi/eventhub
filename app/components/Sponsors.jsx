@@ -3,6 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Container from './Container';
+import Title from './Title';
 
 const sponsorsData = [
     {
@@ -49,12 +51,9 @@ const sponsorsData = [
 
 const Sponsors = () => {
     return (
-        <div className='my-20 p-5'>
-            <div className="max-w-2xl mx-auto text-center">
-                <h2 className="text-gray-800 text-4xl font-extrabold">Our Sponsors</h2>
-            </div>
-
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 text-center mt-16 max-w-5xl mx-auto">
+        <Container>
+            <Title title={"OUR SPONSORS"}></Title>
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 text-center mx-auto">
                 {sponsorsData.map((sponsor, index) => (
                     <motion.a
                         key={index}
@@ -81,7 +80,7 @@ const Sponsors = () => {
                     </motion.a>
                 ))}
             </div>
-        </div>
+        </Container>
     );
 };
 

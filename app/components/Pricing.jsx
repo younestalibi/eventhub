@@ -1,12 +1,11 @@
 import React from 'react'
+import Container from './Container'
+import Title from './Title'
 
 const Pricing = () => {
     return (
-        <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 mx-auto">
-            <div className="mx-auto max-w-3xl text-center">
-                <h2 className="text-3xl text-gray-900 sm:text-4xl mb-16 font-extrabold">BUY TICKETS</h2>
-            </div>
-
+        <Container>
+            <Title title={"BUY TICKETS"}></Title>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
                 <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
                     <div className="p-6 sm:px-8">
@@ -505,7 +504,7 @@ const Pricing = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Container>
     )
 }
 
