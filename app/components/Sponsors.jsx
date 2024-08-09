@@ -41,7 +41,7 @@ const sponsorsData = [
 
 const Sponsors = () => {
     return (
-        <div className='my-20'>
+        <div className='my-20 p-5'>
             <div className="max-w-2xl mx-auto text-center">
                 <h2 className="text-gray-800 text-4xl font-extrabold">Our Sponsors</h2>
             </div>

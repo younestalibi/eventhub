@@ -73,7 +73,7 @@ const speakersData = [
 
 const Speakers = () => {
     return (
-        <div>
+        <div className='my-20 p-5'>
             <div className="max-w-2xl mx-auto text-center">
                 <h2 className="text-gray-800 text-4xl font-extrabold">MEET OUR SPEAKERS</h2>
             </div>
