@@ -23,9 +23,9 @@ const Hero = () => {
 
   return (
     <section className="relative text-white bg-no-repeat bg-center bg-cover"
-      style={{ backgroundImage: "url(https://images.pexels.com/photos/1916816/pexels-photo-1916816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)" }}
+      style={{ backgroundImage: "url(/assets/massEvent.webp)" }}
     >
-      <div className="absolute inset-0 bg-black opacity-40"></div> {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto text-center relative space-y-6">
           <p className="mx-auto mt-4 sm:text-3xl">
