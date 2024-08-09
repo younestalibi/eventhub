@@ -12,7 +12,7 @@ export default function Home() {
   const eventDate = '2024-09-30T17:30:00+04:00';
 
   return (
-    <div className="mb-52">
+    <div>
       <section id="hero">
         <Hero />
       </section>
