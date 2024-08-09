@@ -1,6 +1,16 @@
 import React from 'react';
 import topic1 from '../../public/assets/topics/topic1.jpg';
 import topic2 from '../../public/assets/topics/topic2.jpg';
+import topic3 from '../../public/assets/topics/topic3.jpg';
+import topic4 from '../../public/assets/topics/topic4.jpg';
+import topic5 from '../../public/assets/topics/topic5.jpg';
+import topic6 from '../../public/assets/topics/topic6.png';
+import topic7 from '../../public/assets/topics/topic7.webp';
+import topic8 from '../../public/assets/topics/topic8.png';
+import topic9 from '../../public/assets/topics/topic9.webp';
+import topic10 from '../../public/assets/topics/topic10.webp';
+import topic11 from '../../public/assets/topics/topic11.jpg';
+import topic12 from '../../public/assets/topics/topic12.jpg';
 import Image from 'next/image';
 
 const discussionTopics = [
@@ -17,52 +27,52 @@ const discussionTopics = [
     {
         title: 'THE ROLE OF STABLECOINS IN A DECENTRALIZED ECOSYSTEM',
         speaker: 'Victoria Scholar',
-        image: topic1,
+        image: topic3,
     },
     {
         title: 'DAOS: NEW BREED OF INTERNET-NATIVE ORGANIZATIONS',
         speaker: 'Stephen Lindsay',
-        image: topic1,
+        image: topic4,
     },
     {
         title: 'MAXIMIZING ESG IMPACT WITH BLOCKCHAIN',
         speaker: 'Daniel Antcliff',
-        image: topic1,
+        image: topic5,
     },
     {
         title: 'BRIDGING DEFI AND CEFI',
         speaker: 'Ilyas Vali',
-        image: topic1,
+        image: topic6,
     },
     {
         title: 'WEB 3 GAMING: THE NEW FRONTIER?',
         speaker: 'Russell Armand',
-        image: topic1,
+        image: topic7,
     },
     {
         title: 'DECRYPTING THE REGULATORY LANDSCAPE OF VIRTUAL ASSETS',
         speaker: 'Danny Winn',
-        image: topic1,
+        image: topic8,
     },
     {
         title: 'CENTRAL BANK DIGITAL CURRENCIES, AND CROSS-BORDER PAYMENTS',
         speaker: 'Lex Sokolin',
-        image: topic1,
+        image: topic9,
     },
     {
         title: 'WEB 3: THE FUTURE IS HERE AND NOW',
         speaker: 'Pieter Vanhove',
-        image: topic1,
+        image: topic10,
     },
     {
         title: 'NFT MARKET OVERVIEW: TRENDS & OPPORTUNITIES',
         speaker: 'Lennix Lai',
-        image: topic1,
+        image: topic11,
     },
     {
         title: 'INTEROPERABILITY - CHALLENGES AND OPPORTUNITIES',
         speaker: 'Delphine Forma',
-        image: topic1,
+        image: topic12,
     }
 ];
 

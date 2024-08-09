@@ -52,7 +52,7 @@ const Countdown = ({ eventDate }) => {
                         scale: 1.1
                     }}
                 >
-                    Buy Tickets
+                    BUY TICKET
                 </motion.a>
             </div>
         </motion.div>
