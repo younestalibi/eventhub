@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Announcment from "./components/Announcment";
+import FloatingButtons from "./components/FloatingButtons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <Announcment />
         <Navbar />
         {children}
+        <FloatingButtons />
       </body>
     </html>
   );

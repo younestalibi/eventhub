@@ -3,6 +3,10 @@ import React from 'react'
 const Pricing = () => {
     return (
         <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+            <div className="mx-auto max-w-3xl text-center">
+                <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-16">Buy Tickets</h2>
+            </div>
+
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
                 <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
                     <div className="p-6 sm:px-8">
@@ -11,12 +15,10 @@ const Pricing = () => {
                             <span className="sr-only">Plan</span>
                         </h2>
 
-                        <p className="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
                         <p className="mt-2 sm:mt-4">
-                            <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 20$ </strong>
+                            <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 109$ </strong>
 
-                            <span className="text-sm font-medium text-gray-700">/month</span>
+                            <span className="text-sm font-medium text-gray-700 line-through">299$</span>
                         </p>
 
                         <a
@@ -43,7 +45,7 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
 
-                                <span className="text-gray-700"> 10 users </span>
+                                <span className="text-gray-700">2 Days Conference Access</span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -58,22 +60,7 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
 
-                                <span className="text-gray-700"> 2GB of storage </span>
-                            </li>
-
-                            <li className="flex items-center gap-1">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth="1.5"
-                                    stroke="currentColor"
-                                    className="size-5 text-indigo-700"
-                                >
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                                </svg>
-
-                                <span className="text-gray-700"> Email support </span>
+                                <span className="text-gray-700"> Access to Mobile App </span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -88,7 +75,8 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
 
-                                <span className="text-gray-700"> Help center access </span>
+
+                                <span className="text-gray-700">Differentiated Badge</span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -103,7 +91,8 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
 
-                                <span className="text-gray-700"> Phone support </span>
+
+                                <span className="text-gray-700">Networking Opportunites</span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -118,7 +107,65 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
 
-                                <span className="text-gray-700"> Community access </span>
+                                <span className="text-gray-700">VIP Registration Desk</span>
+                            </li>
+
+                            <li className="flex items-center gap-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    className="size-5 text-red-700"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+
+                                <span className="text-gray-700">VIP Lunch</span>
+                            </li>
+
+                            <li className="flex items-center gap-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    className="size-5 text-red-700"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+
+                                <span className="text-gray-700">VIP Lounge Access</span>
+                            </li>
+                            <li className="flex items-center gap-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    className="size-5 text-red-700"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+
+                                <span className="text-gray-700">VIP Seats in Conference</span>
+                            </li>
+                            <li className="flex items-center gap-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    className="size-5 text-red-700"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+
+                                <span className="text-gray-700">Concierge (Optional)</span>
                             </li>
                         </ul>
                     </div>
@@ -127,16 +174,14 @@ const Pricing = () => {
                 <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
                     <div className="p-6 sm:px-8">
                         <h2 className="text-lg font-medium text-gray-900">
-                            Pro
+                            DELEGATE
                             <span className="sr-only">Plan</span>
                         </h2>
 
-                        <p className="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
                         <p className="mt-2 sm:mt-4">
-                            <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 30$ </strong>
+                            <strong className="text-3xl font-bold text-gray-900 sm:text-4xl">549$ </strong>
 
-                            <span className="text-sm font-medium text-gray-700">/month</span>
+                            <span className="text-sm font-medium text-gray-700 line-through">1299$</span>
                         </p>
 
                         <a
@@ -163,7 +208,7 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
 
-                                <span className="text-gray-700"> 20 users </span>
+                                <span className="text-gray-700">2 Days Conference Access</span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -178,7 +223,7 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
 
-                                <span className="text-gray-700"> 5GB of storage </span>
+                                <span className="text-gray-700"> Access to Mobile App </span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -193,7 +238,7 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
 
-                                <span className="text-gray-700"> Email support </span>
+                                <span className="text-gray-700">Differentiated Badge</span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -208,7 +253,7 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
 
-                                <span className="text-gray-700"> Help center access </span>
+                                <span className="text-gray-700">Networking Opportunites</span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -223,7 +268,7 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
 
-                                <span className="text-gray-700"> Phone support </span>
+                                <span className="text-gray-700">VIP Registration Desk</span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -238,7 +283,50 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
 
-                                <span className="text-gray-700"> Community access </span>
+                                <span className="text-gray-700">VIP Lunch</span>
+                            </li>
+
+                            <li className="flex items-center gap-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    className="size-5 text-red-700"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+
+                                <span className="text-gray-700">VIP Lounge Access</span>
+                            </li>
+                            <li className="flex items-center gap-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    className="size-5 text-red-700"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+
+                                <span className="text-gray-700">VIP Seats in Conference</span>
+                            </li>
+                            <li className="flex items-center gap-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    className="size-5 text-red-700"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+
+                                <span className="text-gray-700">Concierge (Optional)</span>
                             </li>
                         </ul>
                     </div>
@@ -247,16 +335,13 @@ const Pricing = () => {
                 <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
                     <div className="p-6 sm:px-8">
                         <h2 className="text-lg font-medium text-gray-900">
-                            Enterprise
+                            VIP PASS
                             <span className="sr-only">Plan</span>
                         </h2>
-
-                        <p className="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
                         <p className="mt-2 sm:mt-4">
-                            <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 100$ </strong>
+                            <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 1099$ </strong>
 
-                            <span className="text-sm font-medium text-gray-700">/month</span>
+                            <span className="text-sm font-medium text-gray-700 line-through">2499$</span>
                         </p>
 
                         <a
@@ -283,7 +368,7 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
 
-                                <span className="text-gray-700"> 50 users </span>
+                                <span className="text-gray-700">2 Days Conference Access</span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -298,7 +383,7 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
 
-                                <span className="text-gray-700"> 20GB of storage </span>
+                                <span className="text-gray-700"> Access to Mobile App </span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -313,7 +398,7 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
 
-                                <span className="text-gray-700"> Email support </span>
+                                <span className="text-gray-700">Differentiated Badge</span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -328,7 +413,7 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
 
-                                <span className="text-gray-700"> Help center access </span>
+                                <span className="text-gray-700">Networking Opportunites</span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -343,7 +428,7 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
 
-                                <span className="text-gray-700"> Phone support </span>
+                                <span className="text-gray-700">VIP Registration Desk</span>
                             </li>
 
                             <li className="flex items-center gap-1">
@@ -358,7 +443,63 @@ const Pricing = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
 
-                                <span className="text-gray-700"> Community access </span>
+                                <span className="text-gray-700">VIP Lunch</span>
+                            </li>
+                            <li className="flex items-center gap-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    className="size-5 text-indigo-700"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+
+                                <span className="text-gray-700">VIP Lunch</span>
+                            </li>
+                            <li className="flex items-center gap-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    className="size-5 text-indigo-700"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+
+                                <span className="text-gray-700">VIP Lounge Access</span>
+                            </li>
+                            <li className="flex items-center gap-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    className="size-5 text-indigo-700"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+
+                                <span className="text-gray-700">VIP Seats in Conference</span>
+                            </li>
+                            <li className="flex items-center gap-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    className="size-5 text-indigo-700"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+
+                                <span className="text-gray-700">Concierge (Optional)</span>
                             </li>
                         </ul>
                     </div>

@@ -14,19 +14,19 @@ const AboutUs = () => {
                                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                                     <div className="py-3 sm:py-4">
                                         <Image
-                                            width={"10"}
-                                            height={"10"}
+                                            width={"500"}
+                                            height={"500"}
                                             src={image1}
                                             alt=""
                                             className="w-full rounded-2xl"
                                             loading="lazy"
-                                            placeholder="empty"
+                                            placeholder="blur"
                                         />
                                     </div>
                                     <div className="py-3 sm:py-4">
                                         <Image
-                                            width={"10"}
-                                            height={"10"}
+                                            width={"500"}
+                                            height={"500"}
                                             src={image2}
                                             alt=""
                                             className="w-full rounded-2xl"
@@ -38,8 +38,8 @@ const AboutUs = () => {
                                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                                     <div className="relative z-10 my-4">
                                         <Image
-                                            width={"10"}
-                                            height={"10"}
+                                            width={"500"}
+                                            height={"500"}
                                             src={image3}
                                             alt=""
                                             className="w-full rounded-2xl"
@@ -621,7 +621,7 @@ const AboutUs = () => {
                             </div>
                         </div>
 
-                        <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+                        <div className="text-center sm:text-left w-full px-4 lg:w-1/2 xl:w-5/12">
                             <div className="mt-10 lg:mt-0">
                                 <span className="block mb-4 text-lg font-semibold text-indigo-600">
                                     About the event.

@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react'
 import logo from '../../public/assets/hubber-expo-high-resolution-logo-transparent.svg'
+import { motion } from 'framer-motion';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -66,7 +67,11 @@ const Navbar = () => {
                 </div>
             </div>
             {isMenuOpen && (
-                <div className="md:hidden">
+                <motion.div
+                    className="md:hidden"
+                    initial={{ scale: 0.5 }}
+                    animate={{ scale: 1, padding: 10 }}
+                >
                     <nav aria-label="Global">
                         <ul className="mt-4 space-y-2 px-4 text-sm">
                             <li>
@@ -75,15 +80,8 @@ const Navbar = () => {
                         </ul>
                     </nav>
 
-                    <div className="mt-6 px-4">
-                        <a
-                            className="block w-full rounded-md bg-indigo-600 px-5 py-3 text-center text-sm font-medium text-white shadow"
-                            href="#"
-                        >
-                            BUY TICKET
-                        </a>
-                    </div>
-                </div>
+                    
+                </motion.div>
             )}
         </header>
     )
