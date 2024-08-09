@@ -3,71 +3,79 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import team1 from '../../public/assets/team-1.webp';
-import team2 from '../../public/assets/team-2.webp';
-import team3 from '../../public/assets/team-3.webp';
-import team4 from '../../public/assets/team-4.webp';
+import adrianZdunczyk from '../../public/assets/speakers/adrianZdunczyk.jpg';
+import danielAntcliff from '../../public/assets/speakers/danielAntcliff.jpg';
+import dannyWinn from '../../public/assets/speakers/dannyWinn.jpg';
+import delphineForma from '../../public/assets/speakers/delphineForma.jpg';
+import russellArmand from '../../public/assets/speakers/russellArmand.jpg';
+import ilyasVali from '../../public/assets/speakers/ilyasVali.jpg';
+import lexSokolin from '../../public/assets/speakers/lexSokolin.jpg';
+import pieterVanhove from '../../public/assets/speakers/pieterVanhove.jpg';
+import fredZhou from '../../public/assets/speakers/fredZhou.jpg';
+import lennixLai from '../../public/assets/speakers/lennixLai.jpg';
+import victoriaScholar from '../../public/assets/speakers/victoriaScholar.jpg';
+import stephenLindsay from '../../public/assets/speakers/stephenLindsay.jpg';
 
 const speakersData = [
     {
         name: 'Russell Armand',
         role: 'Ledger Enterprise',
-        imageUrl: team1,
+        imageUrl: russellArmand,
     },
     {
         name: 'Danny Winn',
         role: 'CoinMENA',
-        imageUrl: team2,
+        imageUrl: dannyWinn,
     },
     {
         name: 'Ilyas Vali',
         role: 'Bitget',
-        imageUrl: team3,
+        imageUrl: ilyasVali,
     },
     {
         name: 'Lex Sokolin',
         role: 'Binance',
-        imageUrl: team4,
+        imageUrl: lexSokolin,
     },
     {
         name: 'Pieter Vanhove',
         role: 'Fireblocks',
-        imageUrl: team1,
+        imageUrl: pieterVanhove,
     },
     {
         name: 'Adrian Zduńczyk',
         role: 'OneFootball Labs',
-        imageUrl: team2,
+        imageUrl: adrianZdunczyk,
     },
     {
         name: 'Daniel Antcliff',
         role: 'Lisk',
-        imageUrl: team3,
+        imageUrl: danielAntcliff,
     },
     {
         name: 'Delphine Forma',
         role: 'Dubai International Financial Centre Authority',
-        imageUrl: team4,
+        imageUrl: delphineForma,
     },
     {
         name: 'Fred Zhou',
         role: 'Alserkal Group',
-        imageUrl: team1,
+        imageUrl: fredZhou,
     },
     {
         name: 'Lennix Lai',
         role: 'OKX',
-        imageUrl: team2,
+        imageUrl: lennixLai,
     },
     {
         name: 'Victoria Scholar',
         role: 'Ripple',
-        imageUrl: team3,
+        imageUrl: victoriaScholar,
     },
     {
         name: 'Stephen Lindsay',
         role: 'Vechain',
-        imageUrl: team4,
+        imageUrl: stephenLindsay,
     }
 ];
 
