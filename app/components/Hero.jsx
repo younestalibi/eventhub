@@ -16,9 +16,9 @@ const Hero = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
-    }, 3000); // Change phrase every 3 seconds
+    }, 3000); 
 
-    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+    return () => clearInterval(intervalId); 
   }, [phrases.length]);
 
   return (

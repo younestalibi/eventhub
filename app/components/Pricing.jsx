@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pricing = () => {
     return (
-        <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+        <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 mx-auto">
             <div className="mx-auto max-w-3xl text-center">
                 <h2 className="text-3xl text-gray-900 sm:text-4xl mb-16 font-extrabold">BUY TICKETS</h2>
             </div>

@@ -1,17 +1,21 @@
-import Image from 'next/image'
 import React from 'react'
 
 const Footer = () => {
     return (
         <footer className="bg-white lg:grid lg:grid-cols-5">
             <div className="relative block h-32 lg:col-span-2 lg:h-full">
-                <Image
+                {/* <Image
                     width={'500'}
                     height={'500'}
                     src="https://images.unsplash.com/photo-1642370324100-324b21fab3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
                     alt=""
                     className="absolute inset-0 h-full w-full object-cover"
-                />
+                /> */}
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14448.62088333676!2d55.1171498!3d25.1304426!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f153e3609c979%3A0x5945a418a804ac5!2z2KPYqtmE2KfZhtiq2LMg2KfZhNmG2K7ZhNip!5e0!3m2!1sar!2sma!4v1723207855960!5m2!1sar!2sma"
+                    className="absolute inset-0 h-full w-full object-cover border-0"
+                    allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
 
             <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
@@ -108,7 +112,7 @@ const Footer = () => {
                     </div>
 
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                        <div>
+                        {/* <div>
                             <p className="font-medium text-gray-900">Agenda</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
@@ -116,7 +120,7 @@ const Footer = () => {
                                     <a href="#" className="text-gray-700 transition hover:opacity-75"> agenda 1 </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
 
                         <div>
                             <p className="font-medium text-gray-900">HubberExpo</p>
