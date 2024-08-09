@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const sponsorsData = [
     {
@@ -55,12 +56,11 @@ const Sponsors = () => {
                         transition={{ duration: 0.5 }}
                         className="bg-white p-4 rounded-lg shadow-md border cursor-pointer"
                     >
-                        <img
+                        <Image
                             src={sponsor.logoUrl}
                             alt={sponsor.name}
                             width={128}
                             height={128}
-                            
                             className="w-32 h-32 mx-auto object-contain"
                         />
 

@@ -2,67 +2,72 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import team1 from '../../public/assets/team-1.webp';
+import team2 from '../../public/assets/team-2.webp';
+import team3 from '../../public/assets/team-3.webp';
+import team4 from '../../public/assets/team-4.webp';
 
 const speakersData = [
     {
         name: 'Russell Armand',
         role: 'Ledger Enterprise',
-        imageUrl: 'https://readymadeui.com/team-1.webp',
+        imageUrl: team1,
     },
     {
         name: 'Danny Winn',
         role: 'CoinMENA',
-        imageUrl: 'https://readymadeui.com/team-2.webp',
+        imageUrl: team2,
     },
     {
         name: 'Ilyas Vali',
         role: 'Bitget',
-        imageUrl: 'https://readymadeui.com/team-3.webp',
+        imageUrl: team3,
     },
     {
         name: 'Lex Sokolin',
         role: 'Binance',
-        imageUrl: 'https://readymadeui.com/team-4.webp',
+        imageUrl: team4,
     },
     {
         name: 'Pieter Vanhove',
         role: 'Fireblocks',
-        imageUrl: 'https://readymadeui.com/team-1.webp',
+        imageUrl: team1,
     },
     {
         name: 'Adrian Zduńczyk',
         role: 'OneFootball Labs',
-        imageUrl: 'https://readymadeui.com/team-2.webp',
+        imageUrl: team2,
     },
     {
         name: 'Daniel Antcliff',
         role: 'Lisk',
-        imageUrl: 'https://readymadeui.com/team-3.webp',
+        imageUrl: team3,
     },
     {
         name: 'Delphine Forma',
         role: 'Dubai International Financial Centre Authority',
-        imageUrl: 'https://readymadeui.com/team-4.webp',
+        imageUrl: team4,
     },
     {
         name: 'Fred Zhou',
         role: 'Alserkal Group',
-        imageUrl: 'https://readymadeui.com/team-1.webp',
+        imageUrl: team1,
     },
     {
         name: 'Lennix Lai',
         role: 'OKX',
-        imageUrl: 'https://readymadeui.com/team-2.webp',
+        imageUrl: team2,
     },
     {
         name: 'Victoria Scholar',
         role: 'Ripple',
-        imageUrl: 'https://readymadeui.com/team-3.webp',
+        imageUrl: team3,
     },
     {
         name: 'Stephen Lindsay',
         role: 'Vechain',
-        imageUrl: 'https://readymadeui.com/team-4.webp',
+        imageUrl: team4,
     }
 ];
 
@@ -83,7 +88,7 @@ const Speakers = () => {
                         transition={{ duration: 0.5 }}
                         className="bg-white p-4 rounded-lg shadow-md border cursor-pointer"
                     >
-                        <img
+                        <Image
                             src={speaker.imageUrl}
                             alt={speaker.name}
                             width={128}

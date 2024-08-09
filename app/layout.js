@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Announcment from "./components/Announcment";
 import FloatingButtons from "./components/FloatingButtons";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,11 +16,12 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} mb-40`}>
         <Announcment />
         <Navbar />
         {children}
         <FloatingButtons />
+        <Footer />
       </body>
     </html>
   );
