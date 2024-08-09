@@ -19,7 +19,7 @@ const Hero = () => {
     }, 3000); // Change phrase every 3 seconds
 
     return () => clearInterval(intervalId); // Cleanup interval on component unmount
-  }, []);
+  }, [phrases.length]);
 
   return (
     <section className="bg-black text-white">
