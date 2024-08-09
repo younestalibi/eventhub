@@ -1,17 +1,34 @@
 'use client'
 
 import Image from 'next/image';
-import React, { useState } from 'react'
-import logo from '../../public/assets/hubber-expo-high-resolution-logo-transparent.svg'
+import React, { useState, useEffect } from 'react';
+import logo from '../../public/assets/hubber-expo-high-resolution-logo-transparent.svg';
 import { motion } from 'framer-motion';
+
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isFixed, setIsFixed] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    const handleScroll = () => {
+        const announcementHeight = document.querySelector('.sticky')?.offsetHeight || 0;
+        if (window.scrollY > announcementHeight) {
+            setIsFixed(true);
+        } else {
+            setIsFixed(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <header className="bg-white">
+        <header className={`shadow-lg bg-white transition-all duration-300 ${isFixed ? 'fixed top-0 left-0 right-0 z-50' : 'relative'}`}>
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <div className="md:flex md:items-center md:gap-12">
@@ -43,13 +60,11 @@ const Navbar = () => {
                             >
                                 BUY TICKET
                             </a>
-
                         </div>
 
                         <div className="block md:hidden">
                             <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
                                 onClick={toggleMenu}
-
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -79,12 +94,10 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </nav>
-
-                    
                 </motion.div>
             )}
         </header>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
