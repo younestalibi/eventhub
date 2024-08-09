@@ -45,7 +45,7 @@ const AboutUs = () => {
                                     loading="lazy"
                                     placeholder="blur"
                                 />
-                                <span className="absolute -right-7 -bottom-7 z-[-1]">
+                                <span className="hidden sm:block absolute -right-7 -bottom-7 z-[-1]">
                                     <svg
                                         width={134}
                                         height={106}

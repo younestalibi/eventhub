@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Announcement = () => {
     return (
-        <div className="sticky z-30 bg-black px-4 py-3 text-white">
+        <div className="announcement z-30 bg-black px-4 py-3 text-white">
             <motion.p 
                 initial={{ y: '-100vh' }}
                 animate={{ y: 0 }}
