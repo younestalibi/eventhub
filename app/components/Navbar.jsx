@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
-import logo from '../../public/assets/hubber-expo-high-resolution-logo-transparent.svg';
 import Announcement from './Announcement';
+import { appName } from '../config/Constant';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,11 +39,12 @@ const Navbar = () => {
                         <div className="md:flex md:items-center md:gap-12">
                             <a className="block text-teal-600" href="#">
                                 <span className="sr-only">Home</span>
-                                <Image
+                                <span className="">{appName}</span>
+                                {/* <Image
                                     src={logo}
                                     alt='logo'
                                     width={120}
-                                />
+                                /> */}
                             </a>
                         </div>
 

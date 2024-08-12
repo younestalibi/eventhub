@@ -1,4 +1,5 @@
 import React from 'react'
+import { appName, date, place } from '../config/Constant'
 
 const Footer = () => {
     return (
@@ -11,9 +12,9 @@ const Footer = () => {
                     alt=""
                     className="absolute inset-0 h-full w-full object-cover"
                 /> */}
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14448.62088333676!2d55.1171498!3d25.1304426!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f153e3609c979%3A0x5945a418a804ac5!2z2KPYqtmE2KfZhtiq2LMg2KfZhNmG2K7ZhNip!5e0!3m2!1sar!2sma!4v1723207855960!5m2!1sar!2sma"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113128.8020550741!2d-5.732088979907764!3d35.77086907207805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b882d10964725%3A0xa9ac855c8cfd195a!2z2YXYutin2LHYqSDZh9ix2YLZhA!5e0!3m2!1sar!2sma!4v1723469327634!5m2!1sar!2sma"
                     className="absolute inset-0 h-full w-full object-cover border-0"
-                    allowfullscreen=""
+                    allowfullscreen="" 
                     loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
@@ -30,8 +31,8 @@ const Footer = () => {
                         </p>
 
                         <ul className="mt-8 space-y-1 text-sm text-gray-700">
-                            <li>September 30, 2024 at 5:30 PM</li>
-                            <li>Dubai, ATLANTIS, THE PALM.</li>
+                            <li>{date}</li>
+                            <li>{place}</li>
                         </ul>
 
                         <ul className="mt-8 flex gap-6">
@@ -123,7 +124,7 @@ const Footer = () => {
                         </div> */}
 
                         <div>
-                            <p className="font-medium text-gray-900">HubberExpo</p>
+                            <p className="font-medium text-gray-900">{appName}</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
@@ -151,7 +152,7 @@ const Footer = () => {
                         </ul>
 
                         <p className="mt-8 text-sm text-gray-500 sm:mt-0">
-                            &copy; {new Date().getFullYear()}. <span className='font-extrabold'>HubberExpo</span>. All rights reserved. Powered by <a className='font-medium' href='https://younes-talibi.web.app' target='_blank'>Younes-Talibi</a>
+                            &copy; {new Date().getFullYear()}. <span className='font-extrabold'>{appName}</span>. All rights reserved. Powered by <a className='font-medium' href='https://younes-talibi.web.app' target='_blank'>Younes-Talibi</a>
                         </p>
                     </div>
                 </div>

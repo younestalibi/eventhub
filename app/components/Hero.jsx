@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { date, place } from '../config/Constant';
 
 const Hero = () => {
   const phrases = [
@@ -29,7 +30,7 @@ const Hero = () => {
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto text-center relative space-y-6">
           <p className="mx-auto mt-4 sm:text-3xl">
-            September 30, 2024 at 5:30 PM | Dubai, ATLANTIS, THE PALM.
+            {date} | {place}
           </p>
           <h1 className="text-3xl font-extrabold sm:text-6xl">
             CRYPTO EXPO DUBAI 2025

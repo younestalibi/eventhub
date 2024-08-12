@@ -4,6 +4,7 @@ import image1 from '../../public/assets/image-1.jpg'
 import image2 from '../../public/assets/image-2.jpg'
 import image3 from '../../public/assets/image-3.jpg'
 import Container from "./Container";
+import { appName, date } from "../config/Constant";
 const AboutUs = () => {
     return (
         <Container >
@@ -629,14 +630,14 @@ const AboutUs = () => {
                             Who Are We
                         </h2>
                         <p className="mb-5 text-base text-body-color">
-                            HubberExpo is a premier blockchain conference network that brings together influential figures and industry experts to reshape the future of finance.
+                            {appName} is a premier blockchain conference network that brings together influential figures and industry experts to reshape the future of finance.
                         </p>
                         <p className="mb-8 text-base text-body-color">
-                            The upcoming edition of HubberExpo is scheduled to take place in Dubai on September 30, 2024,
+                            The upcoming edition of {appName} is scheduled to take place in Dubai on {date},
                             featuring the participation of the world&apos;s leading crypto companies and blockchain entrepreneurs.
                         </p>
                         <p className="mb-8 text-base text-body-color">
-                            As Dubai emerges as a global crypto hub, HubberExpo serves as the gathering point for the worldwide community interested in blockchain and cryptocurrency,
+                            As Dubai emerges as a global crypto hub, {appName} serves as the gathering point for the worldwide community interested in blockchain and cryptocurrency,
                             offering engaging discussions on cutting-edge financial technologies.
                         </p>
                         <p className="mb-8 text-base text-body-color">

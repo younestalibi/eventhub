@@ -6,10 +6,10 @@ import Countdown from "./components/Countdown";
 import Speakers from "./components/Speakers";
 import Sponsors from "./components/Sponsors";
 import DiscussionTopics from "./components/DiscussionTopics";
-import Title from "./components/Title";
+import { eventDate } from "./config/Constant";
 
 export default function Home() {
-  const eventDate = '2024-09-30T17:30:00+04:00';
+  
 
   return (
     <div>

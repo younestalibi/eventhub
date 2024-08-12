@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { date, place } from '../config/Constant';
 
 const Announcement = () => {
     return (
@@ -13,10 +14,10 @@ const Announcement = () => {
                 className="text-center text-sm font-medium sm:flex sm:justify-center sm:space-x-4 sm:gap-8"
             >
                 <span className="block sm:inline">
-                    <span className='text-blue-500 font-bold mr-2'>Date:</span> September 30, 2024 at 5:30 PM.
+                    <span className='text-blue-500 font-bold mr-2'>Date:</span> {date}
                 </span>
                 <span className="block sm:inline">
-                    <span className='text-blue-500 font-bold mr-2'>Place:</span> Dubai, ATLANTIS, THE PALM.
+                    <span className='text-blue-500 font-bold mr-2'>Place:</span> {place}
                 </span>
             </motion.p>
         </div>

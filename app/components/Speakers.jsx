@@ -3,18 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import adrianZdunczyk from '../../public/assets/speakers/adrianZdunczyk.jpg';
-import danielAntcliff from '../../public/assets/speakers/danielAntcliff.jpg';
-import dannyWinn from '../../public/assets/speakers/dannyWinn.jpg';
-import delphineForma from '../../public/assets/speakers/delphineForma.jpg';
-import russellArmand from '../../public/assets/speakers/russellArmand.jpg';
-import ilyasVali from '../../public/assets/speakers/ilyasVali.jpg';
-import lexSokolin from '../../public/assets/speakers/lexSokolin.jpg';
-import pieterVanhove from '../../public/assets/speakers/pieterVanhove.jpg';
-import fredZhou from '../../public/assets/speakers/fredZhou.jpg';
-import lennixLai from '../../public/assets/speakers/lennixLai.jpg';
-import victoriaScholar from '../../public/assets/speakers/victoriaScholar.jpg';
-import stephenLindsay from '../../public/assets/speakers/stephenLindsay.jpg';
+import speaker1 from '../../public/assets/speakers/speaker1.jpg';
+import speaker2 from '../../public/assets/speakers/speaker2.jpg';
 import Container from './Container';
 import Title from './Title';
 
@@ -22,62 +12,62 @@ const speakersData = [
     {
         name: 'Russell Armand',
         role: 'Ledger Enterprise',
-        imageUrl: russellArmand,
+        imageUrl: speaker1,
     },
     {
         name: 'Danny Winn',
         role: 'CoinMENA',
-        imageUrl: dannyWinn,
+        imageUrl: speaker2,
     },
     {
         name: 'Ilyas Vali',
         role: 'Bitget',
-        imageUrl: ilyasVali,
+        imageUrl: speaker1,
     },
     {
         name: 'Lex Sokolin',
         role: 'Binance',
-        imageUrl: lexSokolin,
+        imageUrl: speaker2,
     },
     {
         name: 'Pieter Vanhove',
         role: 'Fireblocks',
-        imageUrl: pieterVanhove,
+        imageUrl: speaker1,
     },
     {
         name: 'Adrian Zduńczyk',
         role: 'OneFootball Labs',
-        imageUrl: adrianZdunczyk,
+        imageUrl: speaker2,
     },
     {
         name: 'Daniel Antcliff',
         role: 'Lisk',
-        imageUrl: danielAntcliff,
+        imageUrl: speaker1,
     },
     {
         name: 'Delphine Forma',
         role: 'Dubai International Financial Centre Authority',
-        imageUrl: delphineForma,
+        imageUrl: speaker2,
     },
     {
         name: 'Fred Zhou',
         role: 'Alserkal Group',
-        imageUrl: fredZhou,
+        imageUrl: speaker1,
     },
     {
         name: 'Lennix Lai',
         role: 'OKX',
-        imageUrl: lennixLai,
+        imageUrl: speaker2,
     },
     {
         name: 'Victoria Scholar',
         role: 'Ripple',
-        imageUrl: victoriaScholar,
+        imageUrl: speaker1,
     },
     {
         name: 'Stephen Lindsay',
         role: 'Vechain',
-        imageUrl: stephenLindsay,
+        imageUrl: speaker2,
     }
 ];
 
