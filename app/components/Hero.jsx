@@ -33,7 +33,7 @@ const Hero = () => {
             {date} | {place}
           </p>
           <h1 className="text-3xl font-extrabold sm:text-6xl">
-            CRYPTO EXPO DUBAI 2025
+            EXPO DUBAI 2029
           </h1>
 
           <motion.p
